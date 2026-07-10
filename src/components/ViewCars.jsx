@@ -1,8 +1,7 @@
-import React, { useState } from 'react'
-import NavigationBar from './NavigationBar'
+import React from 'react'
 
-const ViewProducts = () => {
-    const [cardata, changeData] = useState(
+const ViewCars = () => {
+      const [cardata, changeData] = useState(
 
         [
   {
@@ -123,10 +122,10 @@ const ViewProducts = () => {
                                                 <h6 class="card-title">Brand: {value.brand}</h6>
                                                 <h6 class="card-title">Model: {value.model}</h6>
                                                 <h6 class="card-title">Fuel Type: {value.fuelType}</h6>
-                                                <h6 class="card-title">Price: {value.model}</h6>
-                                                <h6 class="card-title">Model: {value.model}</h6>
-                                                <h6 class="card-title">Model: {value.model}</h6>
-                                                <a href="#" class="btn btn-success">Add to cart</a>
+                                                <h6 class="card-title">Price: {value.price}</h6>
+                                                <h6 class="card-title">Color: {value.color}</h6>
+                                                <h6 class="card-title">Manufacturing Year: {value.year}</h6>
+                                                <a href="#" class="btn btn-success">View</a>
                                             </div>
                                         </div>
 
@@ -141,7 +140,6 @@ const ViewProducts = () => {
 
 
         </div>
-    )
-}
+)}
 
-export default ViewProducts
+export default ViewCars
